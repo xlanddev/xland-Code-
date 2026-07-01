@@ -1,0 +1,55 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double num1, num2;
+    char op;
+
+    cout << "====== Xland Calculator ======\n";
+    cout << "Number 1: ";
+    cin >> num1;
+
+    cout << "Operator (+ - * /): ";
+    cin >> op;
+
+    cout << "Number 2: ";
+    cin >> num2;
+
+    switch (op)
+    {
+    case '+':
+        cout << "Result: " << num1 + num2;
+        break;
+
+    case '-':
+        cout << "Result: " << num1 - num2;
+        break;
+
+    case '*':
+        cout << "Result: " << num1 * num2;
+        break;
+
+    case '0':
+        cout << "Result: " << num1 * num2;
+        break;
+
+    case '/':
+        if (num2 != 0)
+            cout << "Result: " << num1 / num2;
+        else
+            cout << "Error: Division by zero!";
+        break;
+
+    default:
+        cout << "Invalid operator!";
+        break;
+    }
+
+    cout << "\n\nPress Enter to exit...";
+    cin.ignore();
+    cin.get();
+
+    return 0;
+}
