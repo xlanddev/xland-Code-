@@ -8,7 +8,7 @@ start:
     int 0x10
 
     ; اشاره به حافظه ویدیو
-    mov ax, 0xA000
+    mov ax, 0xA00
     mov es, ax
     xor di, di
 
